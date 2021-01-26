@@ -1,8 +1,16 @@
+body {    
+    display: flex;
+    height: 100vh;
+    flex-direction: column;       
+}
+
 nav {
     display: flex;
     flex-direction: row;    
     justify-content: space-between; 
-    padding: 10px;
+    padding: 25px 25px 0 25px;    
+    font-size: 12px;    
+    height: 50px; 
 }
 
 main {
@@ -10,12 +18,83 @@ main {
     flex-direction: column;    
     align-items: center;    
     width: 100%;    
+    flex-grow: 1;     
+    padding-top: 5%;
+}
+
+h1 {
+    margin-bottom: 40px;
+}
+
+.search-bar-cont {
+    display: flex;
+    width: 555px;    
+    border: 1px solid rgb(212, 212, 212);
+    border-radius: 40px;     
+    height: 40px;
+    margin-bottom: 25px;
+    align-items: center;
+}
+
+.search-bar-cont:hover {
+    box-shadow: 0px 0px 5px rgb(212, 212, 212);
+}
+
+.search-bar-left {
+    padding: 0 10px 0 20px;    
+    width: 20px;
+}
+
+.search-bar {    
+    border: none;
+    background-color: white;    
+    flex-grow: 1;
+}
+
+svg {
+    fill: rgb(172, 172, 172);
+}
+
+.search-bar-right {
+    width: 20px;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;    
+    align-items: center;
+    font-size: 12px; 
+    height: 50px;   
+    background-color: rgb(242, 242, 242);
+    border-top: 1px solid rgb(218, 220, 224);
+}
+
+.carbon-neutral {
+    flex-grow: 1;    
+    text-align: center;
 }
 
 button {
     border: none;
-    border-radius: 10px;
-    padding: 15px;
+    border-radius: 4px;
+    height: 3em;
+    width: 150px;
+    background-color: rgba(236, 236, 236, 0.418);
+    margin-right: 10px; 
+}
+
+button:hover {
+    border: 1px solid rgb(236, 236, 236);
+    box-shadow: 0px 1px 2px rgb(236, 236, 236);
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 
