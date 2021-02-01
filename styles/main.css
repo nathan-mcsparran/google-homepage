@@ -3,6 +3,7 @@ body {
     height: 100vh;
     flex-direction: column;   
     font-family: arial, sans-serif;    
+    color: #202124;
 }
 
 nav {
@@ -11,8 +12,31 @@ nav {
     justify-content: space-between; 
     padding: 25px 25px 0 25px;    
     font-size: 12px;    
-    height: 50px; 
+    height: 50px;     
 }
+
+nav a {
+    opacity: 0.75;
+}
+li {
+    display: inline;
+}
+
+a {
+    text-decoration: none;
+    padding-right: 10px;
+    color: #000000;
+    font-size: 13px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a.footer-links {
+    color: #000;
+}
+
 
 main {
     display: flex;    
@@ -63,11 +87,12 @@ svg {
 footer {
     display: flex;
     flex-direction: row;    
-    align-items: center;
-    font-size: 12px; 
-    height: 50px;   
+    align-items: center;    
+    height: 40px;   
     background-color: rgb(242, 242, 242);
     border-top: 1px solid rgb(218, 220, 224);
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
 .carbon-neutral {
@@ -82,6 +107,7 @@ button {
     width: 150px;
     background-color: rgba(236, 236, 236, 0.418);
     margin-right: 10px; 
+    font-size: 14px;
 }
 
 button:hover {
@@ -90,17 +116,11 @@ button:hover {
     cursor: pointer;
 }
 
-a {
-    text-decoration: none;
-    padding-right: 10px;
-    color: #000000;
-    font-size: 13px;
+a.ftr-links {
+    font-size: 14px;  
+    color: #70757a;  
 }
 
-a:hover {
-    text-decoration: underline;
-}
-
-a.footer-links {
-    color: #000;
+.eco-icon { 
+    height: 14px;    
 }
