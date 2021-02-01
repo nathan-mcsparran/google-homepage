@@ -1,7 +1,8 @@
 body {    
     display: flex;
     height: 100vh;
-    flex-direction: column;       
+    flex-direction: column;   
+    font-family: arial, sans-serif;    
 }
 
 nav {
@@ -91,10 +92,15 @@ button:hover {
 
 a {
     text-decoration: none;
+    padding-right: 10px;
+    color: #000000;
+    font-size: 13px;
 }
 
 a:hover {
     text-decoration: underline;
 }
 
-
+a.footer-links {
+    color: #000;
+}
